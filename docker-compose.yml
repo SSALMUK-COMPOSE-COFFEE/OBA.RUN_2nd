@@ -1,0 +1,7 @@
+services:
+  site:
+    container_name: oba-site
+    build: ./site
+    ports:
+      - "127.0.0.1:18107:80"
+    restart: unless-stopped
